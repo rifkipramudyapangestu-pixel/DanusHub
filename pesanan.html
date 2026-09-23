@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanusHub - Pesanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1>DanusHub</h1>
+        <p>Dashboard Penjual Dana Usaha</p>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>DanusHub</h2>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="pesanan.html">Pesanan</a></li>
+                    <li><a href="stok.html">Manajemen Stok</a></li>
+                    <li><a href="laporan.html">Laporan</a></li>
+                    <li><a href="pembayaran.html">Pembayaran</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+            </nav>
+            <a href="login.html">Keluar</a>
+        </aside>
+
+        <main class="main-content">
+            <section class="content-section">
+                <div class="section-title">
+                    <h2>Pesanan Masuk</h2>
+                    <form>
+                        <label for="filter-lokasi">Lokasi:</label>
+                        <select id="filter-lokasi">
+                            <option>Semua Lokasi</option>
+                            <option>Gedung A</option>
+                            <option>Gedung Kuliah Terpadu</option>
+                            <option>Student Center</option>
+                        </select>
+                    </form>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama Pembeli</th>
+                            <th>Kontak</th>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Lokasi COD</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DH001</td>
+                            <td>Ahmad</td>
+                            <td>081234567890</td>
+                            <td>Nasi Bakar</td>
+                            <td>2</td>
+                            <td>Gedung A</td>
+                            <td>Rp30.000</td>
+                            <td>Menunggu Konfirmasi</td>
+                        </tr>
+                        <tr>
+                            <td>DH002</td>
+                            <td>Siti</td>
+                            <td>082345678901</td>
+                            <td>Kaos DanusHub</td>
+                            <td>1</td>
+                            <td>Student Center</td>
+                            <td>Rp75.000</td>
+                            <td>Sedang Diproses</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 DanusHub. Dashboard Penjual Dana Usaha Mahasiswa.</p>
+    </footer>
+</body>
+</html>

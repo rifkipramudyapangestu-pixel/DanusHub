@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanusHub - Laporan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1>DanusHub</h1>
+        <p>Dashboard Penjual Dana Usaha</p>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>DanusHub</h2>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="pesanan.html">Pesanan</a></li>
+                    <li><a href="stok.html">Manajemen Stok</a></li>
+                    <li><a href="laporan.html">Laporan</a></li>
+                    <li><a href="pembayaran.html">Pembayaran</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+            </nav>
+            <a href="login.html">Keluar</a>
+        </aside>
+
+        <main class="main-content">
+            <section class="content-section">
+                <h2>Laporan Penjualan</h2>
+                <form>
+                    <label for="tanggal-awal">Tanggal Awal</label>
+                    <input type="date" id="tanggal-awal">
+
+                    <label for="tanggal-akhir">Tanggal Akhir</label>
+                    <input type="date" id="tanggal-akhir">
+
+                    <button type="submit">Tampilkan Laporan</button>
+                </form>
+
+                <ul style="margin-top: 16px; padding-left: 20px;">
+                    <li>Total Transaksi: 86 transaksi</li>
+                    <li>Total Produk Terjual: 120 item</li>
+                    <li>Total Omzet: Rp2.450.000</li>
+                </ul>
+
+                <button type="button">Ekspor CSV</button>
+                <button type="button">Ekspor Excel</button>
+                <button type="button">Ekspor PDF</button>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 DanusHub. Dashboard Penjual Dana Usaha Mahasiswa.</p>
+    </footer>
+</body>
+</html>
