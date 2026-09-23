@@ -17,10 +17,8 @@
             <h2>DanusHub</h2>
             <nav>
                 <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="pendaftaran.html">Pendaftaran</a></li>
                     <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="produk.html" class="active">Produk</a></li>
                     <li><a href="pesanan.html">Pesanan</a></li>
                     <li><a href="stok.html">Manajemen Stok</a></li>
                     <li><a href="laporan.html">Laporan</a></li>
@@ -39,10 +37,10 @@
                     <input type="file" id="foto" name="foto">
 
                     <label for="nama-produk">Nama Produk</label>
-                    <input type="text" id="nama-produk" name="nama-produk" required>
+                    <input type="text" id="nama-produk" name="nama-produk" placeholder="Masukkan nama produk" required>
 
                     <label for="harga">Harga</label>
-                    <input type="number" id="harga" name="harga" required>
+                    <input type="number" id="harga" name="harga" placeholder="Masukkan harga" required>
 
                     <label for="kategori">Kategori</label>
                     <select id="kategori" name="kategori">
@@ -53,7 +51,7 @@
                     </select>
 
                     <label for="deskripsi">Deskripsi</label>
-                    <textarea id="deskripsi" name="deskripsi"></textarea>
+                    <textarea id="deskripsi" name="deskripsi" placeholder="Deskripsikan produk Anda"></textarea>
 
                     <label for="status">Status Penjualan</label>
                     <select id="status" name="status">
@@ -62,7 +60,7 @@
                     </select>
 
                     <label for="stok-produk">Jumlah Stok</label>
-                    <input type="number" id="stok-produk" name="stok-produk" min="0">
+                    <input type="number" id="stok-produk" name="stok-produk" min="0" placeholder="Masukkan jumlah stok">
 
                     <button type="submit">Simpan Produk</button>
                 </form>

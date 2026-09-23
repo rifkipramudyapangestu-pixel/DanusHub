@@ -62,15 +62,16 @@ a:hover {
 }
 
 .sidebar nav ul li {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .sidebar nav ul li a {
     color: #dce6f2;
     display: block;
-    padding: 6px 8px;
+    padding: 8px 12px;
     border-radius: 4px;
     font-size: 14px;
+    transition: background-color 0.2s;
 }
 
 .sidebar nav ul li a:hover {
@@ -78,11 +79,22 @@ a:hover {
     text-decoration: none;
 }
 
+/* Sidebar Active State */
+.sidebar nav ul li a.active {
+    background-color: #2a7de1;
+    color: #fff;
+    font-weight: bold;
+}
+
 .sidebar > a {
     display: inline-block;
     margin-top: 20px;
     color: #ffd7d7;
     font-size: 14px;
+}
+
+.sidebar > a:hover {
+    color: #ff9999;
 }
 
 /* ===== Main Content ===== */
@@ -130,6 +142,10 @@ form textarea {
     border-radius: 4px;
     font-size: 14px;
     background-color: #fdfdfd;
+}
+
+form input::placeholder {
+    color: #a0aab4;
 }
 
 form textarea {
@@ -247,6 +263,72 @@ table button:hover {
     color: #8a98a8;
 }
 
+/* ===== Auth Pages (Login & Pendaftaran) ===== */
+.auth-page {
+    background-color: #1f3a5f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.auth-card {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 440px;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #eef3f9;
+}
+
+.auth-header h1 {
+    font-size: 28px;
+    color: #1f3a5f;
+    margin-bottom: 4px;
+}
+
+.auth-header p {
+    font-size: 14px;
+    color: #6b7886;
+}
+
+.auth-card h2 {
+    font-size: 20px;
+    color: #1f3a5f;
+    margin-bottom: 8px;
+}
+
+.auth-link {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7886;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.auth-page footer {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 /* ===== Footer ===== */
 footer {
     background-color: #1f3a5f;
@@ -264,5 +346,9 @@ footer {
 
     .sidebar {
         width: 100%;
+    }
+
+    .auth-card {
+        margin: 20px;
     }
 }

@@ -6,51 +6,34 @@
     <title>DanusHub - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="topbar">
-        <h1>DanusHub</h1>
-        <p>Dashboard Penjual Dana Usaha</p>
-    </header>
+<body class="auth-page">
 
-    <div class="layout">
-        <aside class="sidebar">
-            <h2>DanusHub</h2>
-            <nav>
-                <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="pendaftaran.html">Pendaftaran</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="produk.html">Produk</a></li>
-                    <li><a href="pesanan.html">Pesanan</a></li>
-                    <li><a href="stok.html">Manajemen Stok</a></li>
-                    <li><a href="laporan.html">Laporan</a></li>
-                    <li><a href="pembayaran.html">Pembayaran</a></li>
-                    <li><a href="profil.html">Profil</a></li>
-                </ul>
-            </nav>
-            <a href="login.html">Keluar</a>
-        </aside>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>DanusHub</h1>
+                <p>Dashboard Penjual Dana Usaha</p>
+            </div>
 
-        <main class="main-content">
-            <section class="content-section">
-                <h2>Login Penjual</h2>
-                <form>
-                    <label for="login-email">Email</label>
-                    <input type="email" id="login-email" name="login-email" required>
+            <h2>Login Penjual</h2>
 
-                    <label for="login-password">Password</label>
-                    <input type="password" id="login-password" name="login-password" required>
+            <form>
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="login-email" placeholder="Masukkan email" required>
 
-                    <button type="submit">Masuk</button>
-                </form>
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" placeholder="Masukkan password" required>
 
-                <p>Belum memiliki akun? <a href="pendaftaran.html">Daftar sebagai penjual</a></p>
-            </section>
-        </main>
+                <button type="submit">Masuk</button>
+            </form>
+
+            <p class="auth-link">Belum memiliki akun? <a href="pendaftaran.html">Daftar sebagai penjual</a></p>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2026 DanusHub. Dashboard Penjual Dana Usaha Mahasiswa.</p>
     </footer>
+
 </body>
 </html>

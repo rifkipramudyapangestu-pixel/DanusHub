@@ -6,64 +6,49 @@
     <title>DanusHub - Pendaftaran</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="topbar">
-        <h1>DanusHub</h1>
-        <p>Dashboard Penjual Dana Usaha</p>
-    </header>
+<body class="auth-page">
 
-    <div class="layout">
-        <aside class="sidebar">
-            <h2>DanusHub</h2>
-            <nav>
-                <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="pendaftaran.html">Pendaftaran</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="produk.html">Produk</a></li>
-                    <li><a href="pesanan.html">Pesanan</a></li>
-                    <li><a href="stok.html">Manajemen Stok</a></li>
-                    <li><a href="laporan.html">Laporan</a></li>
-                    <li><a href="pembayaran.html">Pembayaran</a></li>
-                    <li><a href="profil.html">Profil</a></li>
-                </ul>
-            </nav>
-            <a href="login.html">Keluar</a>
-        </aside>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>DanusHub</h1>
+                <p>Dashboard Penjual Dana Usaha</p>
+            </div>
 
-        <main class="main-content">
-            <section class="content-section">
-                <h2>Pendaftaran Penjual</h2>
-                <form>
-                    <label for="nama-penanggung-jawab">Nama Penanggung Jawab</label>
-                    <input type="text" id="nama-penanggung-jawab" name="nama-penanggung-jawab" required>
+            <h2>Pendaftaran Penjual</h2>
 
-                    <label for="nama-ormawa">Nama Ormawa atau UKM</label>
-                    <input type="text" id="nama-ormawa" name="nama-ormawa" required>
+            <form>
+                <label for="nama-penanggung-jawab">Nama Penanggung Jawab</label>
+                <input type="text" id="nama-penanggung-jawab" name="nama-penanggung-jawab" placeholder="Masukkan nama lengkap" required>
 
-                    <label for="nomor-whatsapp">Nomor WhatsApp</label>
-                    <input type="tel" id="nomor-whatsapp" name="nomor-whatsapp" required>
+                <label for="nama-ormawa">Nama Ormawa atau UKM</label>
+                <input type="text" id="nama-ormawa" name="nama-ormawa" placeholder="Masukkan nama organisasi" required>
 
-                    <label for="email-pendaftaran">Email</label>
-                    <input type="email" id="email-pendaftaran" name="email-pendaftaran" required>
+                <label for="nomor-whatsapp">Nomor WhatsApp</label>
+                <input type="tel" id="nomor-whatsapp" name="nomor-whatsapp" placeholder="Contoh: 081234567890" required>
 
-                    <label for="password-pendaftaran">Password</label>
-                    <input type="password" id="password-pendaftaran" name="password-pendaftaran" required>
+                <label for="email-pendaftaran">Email</label>
+                <input type="email" id="email-pendaftaran" name="email-pendaftaran" placeholder="Masukkan email" required>
 
-                    <label for="konfirmasi-password">Konfirmasi Password</label>
-                    <input type="password" id="konfirmasi-password" name="konfirmasi-password" required>
+                <label for="password-pendaftaran">Password</label>
+                <input type="password" id="password-pendaftaran" name="password-pendaftaran" placeholder="Minimal 8 karakter" required>
 
+                <label for="konfirmasi-password">Konfirmasi Password</label>
+                <input type="password" id="konfirmasi-password" name="konfirmasi-password" placeholder="Ulangi password" required>
+
+                <div class="auth-buttons">
                     <button type="submit">Daftar</button>
                     <button type="reset">Reset</button>
-                </form>
+                </div>
+            </form>
 
-                <p>Sudah memiliki akun? <a href="login.html">Login sekarang</a></p>
-            </section>
-        </main>
+            <p class="auth-link">Sudah memiliki akun? <a href="login.html">Login sekarang</a></p>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2026 DanusHub. Dashboard Penjual Dana Usaha Mahasiswa.</p>
     </footer>
+
 </body>
 </html>
